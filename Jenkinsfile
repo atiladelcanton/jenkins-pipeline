@@ -17,7 +17,9 @@ pipeline {
 
     stages {
          stage('Branch') {
-            echo scm
+            steps {
+                echo scm
+            }
         }
     }
 }
